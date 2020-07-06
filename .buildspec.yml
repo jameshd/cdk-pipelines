@@ -1,0 +1,25 @@
+version: 0.2
+
+# env:
+#   git-credential-helper: yes
+#   secrets-manager:
+#     GITHUB_TOKEN: webcore/build/GITHUB_TOKEN
+#   variables:
+#     SKIP_NPM_AUDIT: ""
+#     AWS_DEV_ACCOUNT: 997052946310
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+
+  build:
+    commands:
+      - set -e
+      - node --version
+      - npm --version
+      - npm deploy:prepare
+      - npm run deploy
+
+    finally:
+      - |

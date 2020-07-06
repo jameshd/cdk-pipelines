@@ -1,0 +1,27 @@
+{
+  "name": "cdk-pipelines",
+  "version": "0.1.0",
+  "bin": {
+    "cdk-pipelines": "bin/cdk-pipelines.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.46.0",
+    "aws-cdk": "1.46.0",
+    "jest": "^25.5.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-codebuild": "^1.46.0",
+    "@aws-cdk/aws-codecommit": "^1.46.0",
+    "@aws-cdk/aws-codedeploy": "^1.46.0",
+    "@aws-cdk/aws-codepipeline": "^1.46.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.46.0",
+    "@aws-cdk/aws-lambda": "^1.46.0",
+    "@aws-cdk/aws-s3": "^1.46.0",
+    "@aws-cdk/core": "1.46.0"
+  }
+}
